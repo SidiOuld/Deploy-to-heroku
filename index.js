@@ -7,7 +7,9 @@ server.use(express.json());
 server.get("/", (req, res) => {
   res.send("Deploying to heroku");
 });
-
+server.post("/", (req, res) => {
+  res.send("Deploying to heroku");
+});
 const port = process.env.Port || 8000;
 
 server.listen(port, () => {
